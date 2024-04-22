@@ -12,9 +12,9 @@ load_dotenv()
 warnings.filterwarnings("ignore")
 
 import os
-openai_key = os.environ['OPENAI_API_KEY']
-hf_key = os.environ['HUGGINGFACEHUB_API_TOKEN']
 
+openai_key = os.getenv("OPENAI_API_KEY")
+hf_key = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 
 st.sidebar.title("UTKARSH TRIPATHI")
